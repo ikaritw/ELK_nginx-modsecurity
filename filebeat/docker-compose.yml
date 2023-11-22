@@ -2,7 +2,8 @@ version: "3" #docker-compose的版本
 services:
   filebeat:
     container_name: filebeat
-    image: elastic/filebeat:7.15.0
+    #image: elastic/filebeat:7.15.0
+    image: elastic/filebeat:8.11.1
     build: .
     volumes:
       - "$PWD/filebeat.yml:/usr/share/filebeat/filebeat.yml"
